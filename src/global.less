@@ -1,0 +1,31 @@
+// 滚动条的样式
+.pretty-scroll-bar(@width: 6px, @height: 6px, @background: #eeeeee) {
+  &::-webkit-scrollbar {
+    width: @width;
+    height: @height;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: @background;
+    cursor: pointer;
+
+    &:hover {
+      background: #bebebe;
+    }
+
+    &:active {
+      background: #b0b0b0;
+    }
+  }
+}
+
+body {
+  .pretty-scroll-bar();
+}
+
+.page-wrapper {
+  // 1434px + 6px = 1440px
+  width: 1434px;
+  margin: 0 auto;
+}
