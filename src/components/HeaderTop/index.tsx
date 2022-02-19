@@ -16,14 +16,14 @@ const TopNav: React.FC = () => {
                 <div className={styles['official-account']}>
                     <span className={styles['show']}>关注科技服务网</span>
                     <span className={styles['avater']}>
-                        <img src={require('../../../assets/images/index/qrcode.jpg')} alt="" />
+                        <img src={require('../../assets/images/index/qrcode.jpg')} alt="" />
                         <span className={styles['avater-text']}>科技服务网</span>
                     </span>
                 </div>
                 <div className={styles['official-account']}>
                     <span className={styles['show']}>小程序</span>
                     <span className={styles['avater']}>
-                        <img src={require('../../../assets/images/index/qrcode.jpg')} alt="" />
+                        <img src={require('../../assets/images/index/qrcode.jpg')} alt="" />
                         <span className={styles['avater-text']}>科技服务网</span>
                     </span>
                 </div>

@@ -1,11 +1,11 @@
 import { useRequest } from 'umi';
+import TopNav from '@/components/HeaderTop';
 import HeaderBox from '@/components/HeaderBox'
 import Footer from '@/components/Footer';
 import PlateBox from './components/PlateBox';
 import ActivityBox from './components/ActivityBox';
 import FriendLink from './components/FriendLink';
 import TechChina from './components/TechChina';
-import TopNav from './components/TopNav';
 import PolicyBox from './components/PolicyBox';
 import TechnologyBox from './components/TechnologyBox';
 import PosterBanner from './components/PosterBanner';
