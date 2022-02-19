@@ -5,12 +5,13 @@ import { BarsOutlined } from '@ant-design/icons';
 import styles from './index.less';
 
 export interface Technology {
-    id: string;
-    title: string;
-    cooperationModeDisplay: string;
-    projectIndustryType: { name: string }[];
-    projectImgPath: string;
-    // [key: string]: any;
+  id: string;
+  title: string;
+  cooperationModeDisplay: string;
+  projectIndustryType: { name: string }[];
+  tags: { name: string }[];
+  projectImgPath: string;
+  // [key: string]: any;
 }
 
 interface TechnologyBoxProps {
@@ -56,7 +57,7 @@ const TechnologyBox: React.FC<TechnologyBoxProps> = (
                                         return <span key={index}>{item.name}</span>;
                                     })}
                                 </div>
-                                <div className={styles['clear']}>
+                                <div className='clear'>
                                     转让方式：{technology.cooperationModeDisplay}
                                 </div>
                                 <div className={styles['price']}>
@@ -94,10 +95,10 @@ const TechnologyBox: React.FC<TechnologyBoxProps> = (
                                         return <span key={index}>{item.name}</span>;
                                     })}
                                 </div>
-                                <div className={styles['clear']}>
+                                <div className='clear'>
                                     转让方式：{requirement.cooperationModeDisplay}
                                 </div>
-                                <div className={classnames(styles['clear'], styles['tag'])}>合作研发</div>
+                                <div className={classnames('clear', styles['tag'])}>合作研发</div>
                             </div>
                         </a>
                     );

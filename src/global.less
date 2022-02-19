@@ -1,3 +1,36 @@
+body {
+  .pretty-scroll-bar();
+}
+
+#root {
+  min-width: 1434px;
+  height: 100%;
+}
+
+.page-wrapper {
+  // 1434px + 6px = 1440px
+  width: 1434px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 // 滚动条的样式
 .pretty-scroll-bar(@width: 6px, @height: 6px, @background: #eeeeee) {
   &::-webkit-scrollbar {
@@ -20,12 +53,9 @@
   }
 }
 
-body {
-  .pretty-scroll-bar();
-}
-
-.page-wrapper {
-  // 1434px + 6px = 1440px
-  width: 1434px;
-  margin: 0 auto;
+// 省略样式
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

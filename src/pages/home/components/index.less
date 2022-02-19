@@ -37,103 +37,6 @@
   }
 }
 
-/* 头部导航 */
-.top-nav {
-  font-size: 14px;
-  height: 40px;
-  line-height: 40px;
-  color: rgb(106, 110, 125);
-  margin: 0 80px;
-
-  .nav-left {
-    display: inline-block;
-  }
-
-  .nav-right {
-    float: right;
-    display: flex;
-  }
-
-  .login-box {
-    margin-left: 30px;
-
-    a {
-      text-decoration: none;
-      cursor: pointer;
-      display: inline-block;
-      margin-right: 8px;
-      color: rgb(106, 110, 125);
-
-      &:first-child::after {
-        margin-left: 8px;
-        content: '|';
-      }
-    }
-  }
-
-  .official-account {
-    position: relative;
-    cursor: pointer;
-    float: left;
-    margin-left: 20px;
-
-    &:last-child .avater {
-      left: -30px;
-    }
-
-    .show:hover {
-      color: #ff5e06;
-    }
-
-    .show:hover + .avater {
-      opacity: 1;
-    }
-
-    .avater {
-      display: block;
-      position: absolute;
-      top: 50px;
-      padding: 5px;
-      width: 134px;
-      opacity: 0;
-      background-color: rgb(255, 255, 255);
-      box-shadow: rgba(5, 14, 64, 0.15) 0px 0px 16px 0px;
-      border: 1px solid rgb(230, 231, 241);
-      animation: 0.3s ease-in 0s 1 normal none running none;
-      text-align: center;
-      z-index: 999;
-      pointer-events: none;
-
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        background-color: white;
-        width: 10px;
-        height: 10px;
-        left: 40px;
-        top: -5px;
-        transform: rotateZ(45deg);
-      }
-
-      img {
-        max-width: 100%;
-      }
-
-      .avater-text {
-        display: inline-block;
-        font-size: 14px;
-        color: rgb(1, 143, 255);
-        font-weight: bold;
-        line-height: 12px;
-        text-align: center;
-        padding: 5px 0px;
-        margin-bottom: 0px;
-      }
-    }
-  }
-}
-
 /* 轮播海报 */
 .poster-banner {
   .carousel-list {
@@ -153,7 +56,7 @@
 
 /* 友情链接 */
 .friend-link-list {
-  .page-wrapper;
+  .page-wrapper();
   padding: 0 0 40px;
   display: flex;
   flex-direction: row;
@@ -181,12 +84,12 @@
 }
 
 .link-list {
+  .page-wrapper();
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #fff;
   height: 140px;
-  margin: 0 60px;
 
   .link-item {
     display: flex;
@@ -215,7 +118,7 @@
 
 /* 科创中国 */
 .tech-china {
-  .page-wrapper;
+  .page-wrapper();
   display: flex;
   height: 150px;
   background: #fff7f1;
@@ -274,7 +177,7 @@
 
 /* 政策中心 */
 .policy-box {
-  .page-wrapper;
+  .page-wrapper();
   display: flex;
   padding: 20px 0 40px 0;
 
@@ -510,7 +413,7 @@
 
 /* 技术转化 */
 .technology-box {
-  .page-wrapper;
+  .page-wrapper();
   background: url(../../../assets/images/index/zhuanyi.png);
   background-size: cover;
   position: relative;
@@ -598,10 +501,6 @@
       color: #7b7e8a;
       line-height: 24px;
 
-      .clear {
-        clear: both;
-      }
-
       .over {
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -643,7 +542,7 @@
 
 /* 活动中心 */
 .activity-box {
-  .page-wrapper;
+  .page-wrapper();
   background: url(../../../assets/images/index/actbg.png) no-repeat;
   background-size: cover;
   margin-bottom: 20px;

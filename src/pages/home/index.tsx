@@ -1,11 +1,11 @@
-import { useRequest } from 'umi';
+import { useRequest, useModel } from 'umi';
+import HeaderTop from '@/components/HeaderTop';
 import HeaderBox from '@/components/HeaderBox'
 import Footer from '@/components/Footer';
 import PlateBox from './components/PlateBox';
 import ActivityBox from './components/ActivityBox';
 import FriendLink from './components/FriendLink';
 import TechChina from './components/TechChina';
-import TopNav from './components/TopNav';
 import PolicyBox from './components/PolicyBox';
 import TechnologyBox from './components/TechnologyBox';
 import PosterBanner from './components/PosterBanner';
@@ -16,11 +16,10 @@ export default function HomePage() {
   const { data: activityList, loading: activityListLoading } = useRequest('/api/activity')
   const { data: technologyList, loading: technologyListLoading } = useRequest('/api/technology')
 
-  return (
-    <div className={styles['home']}>
-      <TopNav></TopNav>
-      <HeaderBox></HeaderBox>
-      {/* <HeaderNav></HeaderNav> */}
+  return (<div className={styles['home']}>
+    <HeaderTop></HeaderTop>
+    <HeaderBox></HeaderBox>
+    <div className={styles['main-wrapper']}>
       <PosterBanner></PosterBanner>
       <div className={styles['plate-box-wrapper']}>
         <PlateBox title='政策资讯' subTitle='政策动态速递，科技热点跟进'></PlateBox>
@@ -39,7 +38,8 @@ export default function HomePage() {
         <PlateBox title='友情链接' subTitle='汇聚科技资源，协同创造价值'></PlateBox>
       </div>
       <FriendLink></FriendLink>
-      <Footer></Footer>
     </div>
+    <Footer></Footer>
+  </div>
   );
 }

@@ -42,7 +42,7 @@ const Footer: React.FC<FooterProps> = (props: FooterProps) => {
                 </a>
             </div>
         </div>
-        <div style={{ width: '100%', borderTop: '1px solid #646b83', paddingTop: 40 }}>
+        <div style={{ width: '100%', borderTop: '1px solid #646b83', padding: 30 }}>
             <div className={styles['internal-link']}>
                 <span>关于我们</span>
                 <span>隐私政策</span>
