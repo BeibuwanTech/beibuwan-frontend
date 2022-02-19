@@ -1,4 +1,5 @@
 import React from 'react';
+import { history } from 'umi';
 
 import styles from './index.less';
 
@@ -10,8 +11,8 @@ const TopNav: React.FC = () => {
             </div>
             <div className={styles['nav-right']}>
                 <div className={styles['login-box']}>
-                    <a href="/common/login.html">登录</a>
-                    <a href="/common/reg.html">注册</a>
+                    <a onClick={() => { history.push('/login')}}>登录</a>
+                    <a onClick={() => { history.push('/register') }}>注册</a>
                 </div>
                 <div className={styles['official-account']}>
                     <span className={styles['show']}>关注科技服务网</span>

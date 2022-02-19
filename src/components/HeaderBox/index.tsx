@@ -7,9 +7,9 @@ interface HeaderBoxProps { }
 const HeaderBox: React.FC<HeaderBoxProps> = (props: HeaderBoxProps) => {
     return <div className={styles['header-box']}>
         <div className={styles['header']}>
-            {/* <div className={styles['header-logo']}>
-                <a><img src="/style/images/logos/bsublogo.png" alt="" /></a>
-            </div> */}
+            <div className={styles['header-logo']}>
+                <a><img src={require('@/assets/images/login/logo.png')} alt="" /></a>
+            </div>
             <div className={styles['menu-box']}>
                 <ul>
                     <li><a href="/index.html" className={styles['active']}>首页</a></li>
