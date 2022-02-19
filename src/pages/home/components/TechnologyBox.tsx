@@ -56,7 +56,7 @@ const TechnologyBox: React.FC<TechnologyBoxProps> = (
                                         return <span key={index}>{item.name}</span>;
                                     })}
                                 </div>
-                                <div className={styles['clear']}>
+                                <div className='clear'>
                                     转让方式：{technology.cooperationModeDisplay}
                                 </div>
                                 <div className={styles['price']}>
@@ -94,10 +94,10 @@ const TechnologyBox: React.FC<TechnologyBoxProps> = (
                                         return <span key={index}>{item.name}</span>;
                                     })}
                                 </div>
-                                <div className={styles['clear']}>
+                                <div className='clear'>
                                     转让方式：{requirement.cooperationModeDisplay}
                                 </div>
-                                <div className={classnames(styles['clear'], styles['tag'])}>合作研发</div>
+                                <div className={classnames('clear', styles['tag'])}>合作研发</div>
                             </div>
                         </a>
                     );

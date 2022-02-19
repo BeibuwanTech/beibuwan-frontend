@@ -16,11 +16,10 @@ export default function HomePage() {
   const { data: activityList, loading: activityListLoading } = useRequest('/api/activity')
   const { data: technologyList, loading: technologyListLoading } = useRequest('/api/technology')
 
-  return (
-    <div className={styles['home']}>
-      <TopNav></TopNav>
-      <HeaderBox></HeaderBox>
-      {/* <HeaderNav></HeaderNav> */}
+  return (<div className={styles['home']}>
+    <TopNav></TopNav>
+    <HeaderBox></HeaderBox>
+    <div className={styles['main-wrapper']}>
       <PosterBanner></PosterBanner>
       <div className={styles['plate-box-wrapper']}>
         <PlateBox title='政策资讯' subTitle='政策动态速递，科技热点跟进'></PlateBox>
@@ -39,7 +38,8 @@ export default function HomePage() {
         <PlateBox title='友情链接' subTitle='汇聚科技资源，协同创造价值'></PlateBox>
       </div>
       <FriendLink></FriendLink>
-      <Footer></Footer>
     </div>
+    <Footer></Footer>
+  </div>
   );
 }

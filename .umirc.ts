@@ -13,7 +13,7 @@ export default defineConfig({
   routes: [
     { path: '/', component: '@/pages/home' },
     { path: '/demo', component: '@/pages/demo' },
-    { path: '/register', component: '@/pages/register' },
+    { path: '/register', component: '@/pages/login/register' },
   ],
   fastRefresh: {},
   dynamicImport: {},

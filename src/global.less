@@ -1,3 +1,21 @@
+body {
+  .pretty-scroll-bar();
+}
+
+#root {
+  height: 100%;
+}
+
+.page-wrapper {
+  // 1434px + 6px = 1440px
+  width: 1434px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
 // 滚动条的样式
 .pretty-scroll-bar(@width: 6px, @height: 6px, @background: #eeeeee) {
   &::-webkit-scrollbar {
@@ -18,14 +36,4 @@
       background: #b0b0b0;
     }
   }
-}
-
-body {
-  .pretty-scroll-bar();
-}
-
-.page-wrapper {
-  // 1434px + 6px = 1440px
-  width: 1434px;
-  margin: 0 auto;
 }
