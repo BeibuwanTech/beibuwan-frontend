@@ -1,5 +1,5 @@
 import React from 'react';
-import classnames from 'classnames'
+import classNames from 'classnames'
 import { BarsOutlined } from '@ant-design/icons';
 
 import styles from './index.less';
@@ -9,8 +9,13 @@ export interface Technology {
   title: string;
   cooperationModeDisplay: string;
   projectIndustryType: { name: string }[];
+  demandIndustryType: { name: string }[];
+  industryType: { name: string }[];
   tags: { name: string }[];
   projectImgPath: string;
+  brokerName: string
+  logoPath: string
+  zMTechBrokerAdditionalList: { name: string }[]
   // [key: string]: any;
 }
 
@@ -98,7 +103,7 @@ const TechnologyBox: React.FC<TechnologyBoxProps> = (
                                 <div className='clear'>
                                     转让方式：{requirement.cooperationModeDisplay}
                                 </div>
-                                <div className={classnames('clear', styles['tag'])}>合作研发</div>
+                                <div className={classNames('clear', styles['tag'])}>合作研发</div>
                             </div>
                         </a>
                     );

@@ -1,6 +1,7 @@
 import { useRequest, useModel } from 'umi';
-import HeaderTop from '@/components/HeaderTop';
 import HeaderBox from '@/components/HeaderBox'
+import HeaderTop from '@/components/HeaderTop';
+import PosterBanner from '@/components/PosterBanner';
 import Footer from '@/components/Footer';
 import PlateBox from './components/PlateBox';
 import ActivityBox from './components/ActivityBox';
@@ -8,7 +9,6 @@ import FriendLink from './components/FriendLink';
 import TechChina from './components/TechChina';
 import PolicyBox from './components/PolicyBox';
 import TechnologyBox from './components/TechnologyBox';
-import PosterBanner from './components/PosterBanner';
 
 import styles from './index.less';
 

@@ -1,6 +1,6 @@
 import { Carousel } from 'antd';
 import React from 'react';
-import classnames from 'classnames';
+import classNames from 'classnames';
 
 import styles from './index.less';
 

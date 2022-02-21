@@ -1,5 +1,5 @@
 import React from 'react';
-import classnames from 'classnames';
+import classNames from 'classnames';
 
 import styles from './index.less';
 
@@ -34,7 +34,7 @@ const ActivityBox: React.FC<ActivityBoxProps> = (props: ActivityBoxProps) => {
                         <div className={styles['activity-img-item']}>{activity.statusDisplay}</div>
                     </div>
                     <div className={styles['activity-info']}>
-                        <div className={classnames(styles['activity-type'], styles['activity-date'])}>
+                        <div className={classNames(styles['activity-type'], styles['activity-date'])}>
                             <span className="iconfont icon-lishijilu"></span>
                             <span>{`${activity.activeStartTime} - ${activity.activeEndTime} ${activity.weekday}`}</span>
                         </div>
@@ -54,16 +54,16 @@ const ActivityBox: React.FC<ActivityBoxProps> = (props: ActivityBoxProps) => {
                     </div>
                 </a>
             })}
-            <a className={classnames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
-            <a className={classnames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
-            <a className={classnames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
-            <a className={classnames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
-            <a className={classnames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
-            <a className={classnames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
-            <a className={classnames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
-            <a className={classnames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
-            <a className={classnames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
-            <a className={classnames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
+            <a className={classNames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
+            <a className={classNames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
+            <a className={classNames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
+            <a className={classNames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
+            <a className={classNames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
+            <a className={classNames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
+            <a className={classNames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
+            <a className={classNames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
+            <a className={classNames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
+            <a className={classNames(styles['activity'], styles['hide'])}><div className={styles['activity-img']}></div></a>
         </div>
     </div>
 }

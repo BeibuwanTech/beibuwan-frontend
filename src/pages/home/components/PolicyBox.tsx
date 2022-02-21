@@ -1,6 +1,6 @@
 import { Carousel } from 'antd';
 import React from 'react';
-import classnames from 'classnames';
+import classNames from 'classnames';
 
 import styles from './index.less';
 
@@ -218,7 +218,7 @@ const PolicyBox: React.FC<PolicyBoxProps> = (props: PolicyBoxProps) => {
                 <div className={styles['policy-quick']}>
                     <a
                         href="/common/login.html"
-                        className={classnames(styles['item'], styles['item1'])}
+                        className={classNames(styles['item'], styles['item1'])}
                     >
                         <div>
                             政策速递
@@ -227,7 +227,7 @@ const PolicyBox: React.FC<PolicyBoxProps> = (props: PolicyBoxProps) => {
                     </a>
                     <a
                         href="/common/login.html"
-                        className={classnames(styles['item'], styles['item2'])}
+                        className={classNames(styles['item'], styles['item2'])}
                     >
                         <div>
                             政策智配
@@ -236,7 +236,7 @@ const PolicyBox: React.FC<PolicyBoxProps> = (props: PolicyBoxProps) => {
                     </a>
                     <a
                         href="/common/login.html"
-                        className={classnames(styles['item'], styles['item3'])}
+                        className={classNames(styles['item'], styles['item3'])}
                     >
                         <div>
                             政策答人
@@ -245,7 +245,7 @@ const PolicyBox: React.FC<PolicyBoxProps> = (props: PolicyBoxProps) => {
                     </a>
                     <a
                         href="/common/login.html"
-                        className={classnames(styles['item'], styles['item4'])}
+                        className={classNames(styles['item'], styles['item4'])}
                     >
                         <div>
                             申报助手

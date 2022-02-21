@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { history, useModel } from 'umi';
-import classnames from 'classnames';
+import classNames from 'classnames';
 import Footer from '@/components/Footer'
 
 import styles from './index.less'
@@ -42,13 +42,13 @@ export default function LoginPage(props: any) {
                                 </ul>
                                 <form id="reg-form" className={styles['login-form']}>
                                     <div
-                                        className={classnames(
+                                        className={classNames(
                                             styles['form-item'],
                                             styles['active'],
                                         )}
                                     >
                                         <div
-                                            className={classnames(styles['input'], styles['phone'])}
+                                            className={classNames(styles['input'], styles['phone'])}
                                         >
                                             <input
                                                 name="phone"
@@ -59,7 +59,7 @@ export default function LoginPage(props: any) {
                                         </div>
                                         <div className="clear"></div>
                                         <div
-                                            className={classnames(
+                                            className={classNames(
                                                 styles['input'],
                                                 styles['password'],
                                             )}
@@ -75,7 +75,7 @@ export default function LoginPage(props: any) {
                                     </div>
                                     <div id="msg"></div>
                                     <button
-                                        className={classnames(styles['btn'], styles['reg'])}
+                                        className={classNames(styles['btn'], styles['reg'])}
                                         onClick={(e) => {
                                             history.push('/');
                                             e.preventDefault();
@@ -107,13 +107,13 @@ export default function LoginPage(props: any) {
                                 </ul>
                                 <form id="login-form" className={styles['login-form']}>
                                     <div
-                                        className={classnames(
+                                        className={classNames(
                                             styles['form-item'],
                                             styles['active'],
                                         )}
                                     >
                                         <div
-                                            className={classnames(styles['input'], styles['phone'])}
+                                            className={classNames(styles['input'], styles['phone'])}
                                         >
                                             <input
                                                 name="phone"
@@ -124,7 +124,7 @@ export default function LoginPage(props: any) {
                                         </div>
                                         <div className="clear"></div>
                                         <div
-                                            className={classnames(
+                                            className={classNames(
                                                 styles['input'],
                                                 styles['password'],
                                             )}
@@ -140,7 +140,7 @@ export default function LoginPage(props: any) {
                                     </div>
                                     <div id="msg"></div>
                                     <button
-                                        className={classnames(styles['btn'], styles['login'])}
+                                        className={classNames(styles['btn'], styles['login'])}
                                         onClick={(e) => {
                                             signin('LuJunxing', '186089015221');
                                             history.push('/');
