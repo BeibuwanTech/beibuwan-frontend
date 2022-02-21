@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { history, useModel } from 'umi';
 import classnames from 'classnames';
 import Footer from '@/components/Footer'
 
 import styles from './index.less'
 
 export default function LoginPage(props: any) {
+    const { user, signin, signout } = useModel('useAuthModel', model => ({ user: model.user, signin: model.signin, signout: model.signout }));
     const [pageType, setPageType] = useState<'login' | 'register'>(props.match.path === '/register' ? 'register' : 'login')
 
     return <div className={styles['register']}>
@@ -47,7 +49,10 @@ export default function LoginPage(props: any) {
                                     </div>
                                 </div>
                                 <div id="msg"></div>
-                                <button className={classnames(styles['btn'], styles['reg'])} onClick={(e) => { e.preventDefault() }}>同意服务协议并注册</button>
+                                <button className={classnames(styles['btn'], styles['reg'])} onClick={(e) => {
+                                    history.push('/')
+                                    e.preventDefault()
+                                }}>同意服务协议并注册</button>
                                 {/* <div className={styles['agree']}>
                                     <input type="checkbox" name="protocolReadFlag" />
                                     <label>我已阅读</label>
@@ -77,7 +82,11 @@ export default function LoginPage(props: any) {
                                     </div>
                                 </div>
                                 <div id="msg"></div>
-                                <button className={classnames(styles['btn'], styles['login'])} onClick={(e) => { e.preventDefault() }}>立即登录</button>
+                                <button className={classnames(styles['btn'], styles['login'])} onClick={(e) => {
+                                    signin('LuJunxing', '186089015221')
+                                    history.push('/')
+                                    e.preventDefault()
+                                }}>立即登录</button>
                                 <div className={styles['links']}>没有账号？<a onClick={() => { setPageType('register') }} className={styles['link-text']}>注册新账号</a>
                                 </div>
                             </form>

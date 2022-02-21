@@ -17,6 +17,8 @@ export default defineConfig({
     { path: '/demo', component: '@/pages/demo' },
   ],
   fastRefresh: {},
-  dynamicImport: {},
+  dynamicImport: {
+    loading: '@/components/Loading',
+  },
   exportStatic: {},
 });

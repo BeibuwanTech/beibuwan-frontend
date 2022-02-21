@@ -1,5 +1,5 @@
-import { useRequest } from 'umi';
-import TopNav from '@/components/HeaderTop';
+import { useRequest, useModel } from 'umi';
+import HeaderTop from '@/components/HeaderTop';
 import HeaderBox from '@/components/HeaderBox'
 import Footer from '@/components/Footer';
 import PlateBox from './components/PlateBox';
@@ -17,7 +17,7 @@ export default function HomePage() {
   const { data: technologyList, loading: technologyListLoading } = useRequest('/api/technology')
 
   return (<div className={styles['home']}>
-    <TopNav></TopNav>
+    <HeaderTop></HeaderTop>
     <HeaderBox></HeaderBox>
     <div className={styles['main-wrapper']}>
       <PosterBanner></PosterBanner>

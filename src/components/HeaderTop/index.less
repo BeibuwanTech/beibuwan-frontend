@@ -25,9 +25,60 @@
       margin-right: 8px;
       color: rgb(106, 110, 125);
 
+      &:hover {
+        color: #fc7f10;
+      }
+
       &:first-child::after {
         margin-left: 8px;
         content: '|';
+      }
+    }
+  }
+
+  .user-box {
+    margin-left: 30px;
+
+    .user {
+      display: inline-block;
+
+      span {
+        color: #fc7f10;
+        font-weight: 600;
+        margin-right: 8px;
+      }
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 16px;
+        color: rgb(106, 110, 125);
+
+        &:hover {
+          color: #fc7f10;
+        }
+      }
+    }
+
+    > a {
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 16px;
+      color: rgb(106, 110, 125);
+
+      &:hover {
+        color: #fc7f10;
+      }
+
+      &::after {
+        margin-left: 16px;
+        content: '|';
+      }
+
+      &:last-child::after {
+        content: '';
       }
     }
   }
@@ -94,4 +145,3 @@
     }
   }
 }
-
