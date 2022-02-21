@@ -34,7 +34,7 @@ const ActivityBox: React.FC<ActivityBoxProps> = (props: ActivityBoxProps) => {
                         <div className={styles['activity-img-item']}>{activity.statusDisplay}</div>
                     </div>
                     <div className={styles['activity-info']}>
-                        <div className={classnames(styles['activity-type'],  styles['activity-date'])}>
+                        <div className={classnames(styles['activity-type'], styles['activity-date'])}>
                             <span className="iconfont icon-lishijilu"></span>
                             <span>{`${activity.activeStartTime} - ${activity.activeEndTime} ${activity.weekday}`}</span>
                         </div>
