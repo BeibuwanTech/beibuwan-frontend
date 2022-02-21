@@ -11,8 +11,9 @@ interface HeaderTopProps {
     }
 }
 
-const TopNav: React.FC<HeaderTopProps> = (props: HeaderTopProps) => {
+const HeaderTop: React.FC<HeaderTopProps> = (props: HeaderTopProps) => {
     const { user, signin, signout } = useModel('useAuthModel', model => ({ user: model.user, signin: model.signin, signout: model.signout }));
+
     return <div style={{ background: 'rgb(255, 245, 240)', color: 'rgb(106, 110, 125)' }}>
         <div className={styles['top-nav']}>
             <div className={styles['nav-left']}>
@@ -57,4 +58,4 @@ const TopNav: React.FC<HeaderTopProps> = (props: HeaderTopProps) => {
     </div>
 }
 
-export default TopNav
+export default HeaderTop
