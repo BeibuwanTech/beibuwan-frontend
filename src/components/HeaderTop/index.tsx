@@ -1,9 +1,11 @@
 import React from 'react';
+import classNames from 'classnames';
 import { history, useModel } from 'umi';
 
 import styles from './index.less';
 
 interface HeaderTopProps {
+    theme?: 'orange' | 'blue'
     status?: 'in' | 'out'
     user?: {
         username: string,
@@ -12,8 +14,15 @@ interface HeaderTopProps {
 }
 
 const HeaderTop: React.FC<HeaderTopProps> = (props: HeaderTopProps) => {
+    const { theme = 'orange' } = props
     const { user, signin, signout } = useModel('useAuthModel', model => ({ user: model.user, signin: model.signin, signout: model.signout }));
-    return <div style={{ background: 'rgb(255, 245, 240)', color: 'rgb(106, 110, 125)' }}>
+
+    const cls = classNames(styles['top-nav-wrapper'], {
+        [styles['orange']]: theme === 'orange',
+        [styles['blue']]: theme === 'blue'
+    })
+
+    return <div className={cls}>
         <div className={styles['top-nav']}>
             <div className={styles['nav-left']}>
                 Hi~，欢迎来到<a href="/index.html" style={{ color: 'rgb(255, 94, 6)' }}>科技服务网</a>！

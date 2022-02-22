@@ -34,6 +34,26 @@ export default {
                     { label: '建筑业', value: '建筑业12316' },
                     { label: '某某行业业', value: '建筑业' }
                 ]
+            },
+            {
+                label: '投资类型',
+                data: [
+                    { label: '建筑业', value: '建筑业123' },
+                    { label: '建筑业', value: '建筑业1234' },
+                    { label: '建筑业', value: '建筑业1235' },
+                    { label: '建筑业', value: '建筑业1236' },
+                    { label: '建筑业', value: '建筑业1237' },
+                    { label: '建筑业', value: '建筑业1238' },
+                    { label: '建筑业', value: '建筑业1239' },
+                    { label: '建筑业', value: '建筑业12310' },
+                    { label: '建筑业', value: '建筑业12311' },
+                    { label: '建筑业', value: '建筑业12312' },
+                    { label: '建筑业', value: '建筑业12313' },
+                    { label: '建筑业', value: '建筑业12314' },
+                    { label: '建筑业', value: '建筑业12315' },
+                    { label: '建筑业', value: '建筑业12316' },
+                    { label: '某某行业业', value: '建筑业' }
+                ]
             }
         ]
     }

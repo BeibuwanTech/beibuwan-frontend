@@ -1,0 +1,72 @@
+@import (reference) '../../../global.less';
+
+.technology-list-wrapper {
+  .page-wrapper();
+
+  .technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .technology {
+      display: flex;
+      flex-direction: column;
+      width: calc((100% - 50px) / 4);
+      padding: 20px;
+      background: #ffffff;
+
+      .technology-image {
+        height: 230px;
+        border: 1px solid #cacaca;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .technology-description {
+        line-height: 1.5;
+        font-size: 0.9rem;
+        color: #999;
+
+        h4 {
+          margin: 10px 0;
+          line-height: 1.5;
+          font-size: 1rem;
+          font-weight: 600;
+          color: #333;
+          text-align: justify;
+        }
+
+        .price {
+          font-size: 1rem;
+          color: #f4873c;
+        }
+      }
+
+      .technology-button {
+        text-align: center;
+        padding: 8px;
+        margin-top: 12px;
+        display: block;
+        background: #f4873c;
+        color: #fff;
+      }
+
+      .technology-button-list {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        .technology-button {
+          flex: 1;
+
+          &.blue {
+            background: #13c9ef;
+          }
+        }
+      }
+    }
+  }
+}
