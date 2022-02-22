@@ -15,7 +15,7 @@ export default defineConfig({
     { path: '/login', component: '@/pages/login' },
     { path: '/register', component: '@/pages/login' },
     { path: '/technology/market', component: '@/pages/technology/market' },
-    { path: '/technology/achivement', component: '@/pages/technology/achivement' },
+    { path: '/technology/achievement', component: '@/pages/technology/achievement' },
     { path: '/demo', component: '@/pages/demo' },
   ],
   fastRefresh: {},

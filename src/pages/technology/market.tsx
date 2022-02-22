@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 import PosterBanner from '@/components/PosterBanner';
 
 export default function MarketPage(props: any) {
-  const { data: achivementList, loading: achivementListLoading } = useRequest(
+  const { data: achievementList, loading: achievementListLoading } = useRequest(
     '/api/technology',
   );
   const { data: demandList, loading: demandListLoading } = useRequest(
@@ -36,8 +36,8 @@ export default function MarketPage(props: any) {
         </div>
         <div className={styles['technology-list-wrapper']}>
           <ul className={styles['technology-list']}>
-            {achivementListLoading === false &&
-              achivementList.slice(0, 4).map((technology: Technology) => {
+            {achievementListLoading === false &&
+              achievementList.slice(0, 4).map((technology: Technology) => {
                 return (
                   <li key={technology.id} className={styles['technology']}>
                     <div className={styles['technology-image']}>
